@@ -14,12 +14,10 @@ var app = angular.module("application", [
 ]);
 
 
-//global application config
-app.config(['$routeProvider', '$locationProvider',
+//global application configuration
+app.config(['$routeProvider', function($routeProvider){
 
-    //global routing setup
-	function($routeProvider){
-
+		//global routing setup
 		$routeProvider
 		//home
 		.when('/', {
@@ -33,10 +31,12 @@ app.config(['$routeProvider', '$locationProvider',
 
 
 app.run(function($rootScope) {
+
     $rootScope.setCurrentPage = function(page) {
         $rootScope.currentPage = page;
         return $rootScope.currentPage;
     };
+
 });
 
 
