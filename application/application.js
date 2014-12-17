@@ -21,7 +21,7 @@ app.config(['$routeProvider', function($routeProvider){
 		$routeProvider
 		//home
 		.when('/', {
-			templateUrl : 'application/home/templates/home.html',
+			templateUrl : 'templates/home/home.html',
 			controller  : 'homeCtrl'
 		})
 		//if route not found
