@@ -7,12 +7,16 @@
 
 
 //home controller
-app.controller('homeCtrl', ['$scope', '$location', '$rootScope', function($scope, $location, $rootScope){
+app.controller('homeCtrl', ['$scope', '$rootScope', function($scope, $rootScope){
 
 	$rootScope.setCurrentPage('home');
 
-	$scope.go = function (path) {
-		$location.path(path);
-	};
+}]);
+
+
+//home controller
+app.controller('imprintCtrl', ['$scope', '$rootScope', function($scope, $rootScope){
+
+	$rootScope.setCurrentPage('imprint');
 
 }]);

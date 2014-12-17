@@ -24,6 +24,10 @@ app.config(['$routeProvider', function($routeProvider){
 			templateUrl : 'templates/home/home.html',
 			controller  : 'homeCtrl'
 		})
+		.when('/imprint', {
+			templateUrl : 'templates/imprint/imprint.html',
+			controller  : 'imprintCtrl'
+		})
 		//if route not found
 		.otherwise({redirectTo: '/'});
 
